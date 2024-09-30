@@ -98,9 +98,9 @@ const res = require("express/lib/response.js");
 const person = require("./models/person");
 
 
+require('dotenv').config();
 
-
-
+const PORT = process.env.PORT || 3000;
 
 
 app.get('/', function (req, res) {
